@@ -1,13 +1,10 @@
-# API de Usuarios - Athendat S.R.L.
+# API de Usuarios
 
 API desarrollada en NestJS utilizando Prisma ORM y MongoDB, con autenticación JWT, notificaciones en tiempo real mediante Socket.IO y documentación Swagger.
 
-## 📋 Requisitos Previos
+## 📋 Requisitos de la aplicación
 
-- Node.js (v18+)
-- npm (v9+)
-- MongoDB instalado y en ejecución
-- Nest CLI instalado globalmente (`npm install -g @nestjs/cli`)
+- Ir a la carpeta requirements y abrir el archivo requirements.pdf
 
 ## 🚀 Configuración Inicial
 
@@ -32,7 +29,7 @@ API desarrollada en NestJS utilizando Prisma ORM y MongoDB, con autenticación J
 4. **Variables de entorno:**
    ```bash
     JWT_SECRET=<TU_SECRETO_JWT>
-    DATABASE_URL=<URL_MONGODB> # Ej: mongodb://localhost:27017/athendat
+    DATABASE_URL=<URL_MONGODB> # Ej: mongodb://localhost:27017/users
     PORT=<PUERTO_API> # Ej: 3000
    ```
 
@@ -55,7 +52,7 @@ La API estará disponible en http://localhost:{PORT}/api.
 
 ### ¿Qué esperar?
 
-1. **Al correr la aplicación, se generará una carpeta logs y dentro se guardarán los logs en el sistema. Siendo guardados bajo el formato [2023-10-25] INFO: User admin@athendat.com realizó CREATE_USER**
+1. **Al correr la aplicación, se generará una carpeta logs y dentro se guardarán los logs en el sistema. Siendo guardados bajo el formato [2023-10-25] INFO: User admin@rosniel.com realizó CREATE_USER**
 
 2. **A su vez, se crea una conexión en tiempo real a través de Socket.IO. En la cual se crea un evento notification. El cual también emitirá todos los logs del sistema que no sean de lectura.**
 
